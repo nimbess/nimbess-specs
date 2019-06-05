@@ -14,8 +14,8 @@ guides to get started with Nimbess. To get started, read these:
 * [Developer Guide](core/developer.md)
 
 ## Feature Specs
-Features should be added with a new folder within the features folder, along
-with a spec written detailing the changes and impact of the new feature. Follow
+All new features should include a Feature Spec that details the changes and
+impacts of the new feature. Create a folder for each new feature. Follow
 the [example](features/example/example.md) template when adding a new feature.
 
 ## Contributing
@@ -25,5 +25,5 @@ yourself. Complete the Feature Spec template for your feature and issue a pull
 request to this repo.
 
 ## License
-Nimbess is available under hte Apache 2.0 license. See [LICENSE](LICENSE) file
+Nimbess is available under the Apache 2.0 license. See [LICENSE](LICENSE) file
 for details.

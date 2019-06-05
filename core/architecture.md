@@ -38,7 +38,7 @@ pod with label “x” should be able to talk to label “y”, but no one else 
 minimum required bandwidth of 25 Gbps. The policy would be translated on the
 backend in order to recognize that a high speed path is required, and
 reconfigure QoS and ACL in order to apply the requested intent across the
-cluster’s network. UNP is not only limited to  access-control lists (ACL),
+cluster’s network. UNP is not only limited to access-control lists (ACL),
 but also network slicing by including multi-tenancy, bandwidth requirements,
 traffic differentiation (QoS), Service Function Chaining (SFC), etc. A single
 policy may be applied to many pods, but a pod may only have a single UNP
@@ -146,5 +146,5 @@ Climate Control serves as the CLI tool for interacting directly with Nimbess in
 order to examine data plane state and Nimbess specific configuration.
 
 ### Doppler
-Doppler provides a customized GUI in order to visually examine the k8s cluster
-network, as well as visualize the data plane network fabric.
+Doppler provides a customized GUI in order to examine as well as troubleshoot
+the data plane network fabric.
