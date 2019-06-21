@@ -64,10 +64,11 @@ configures the secondary interface appropriately. This key point means that
 rather than defining network configuration within pod annotations at pod
 instantiation or deletion, pod's networking configuration is done separately as
 a UNP resource declaration. This means that the pod's network configuration is
-updatable at runtime by simply updating the policy. This different from NSM
+updatable at runtime by simply updating the policy. This is different from NSM
 for three reasons:
 
-1. Nimbess only ever uses a single high-speed port for a pod
+1. Nimbess only ever uses a single high-speed port for a pod, while NSM
+requires a separate port per POD connection.
 2. UNP does not try to do VNF/CNF orchestration with K8S
 3. UNP is not restricted to L2-L3 service connectivity/policy
 
@@ -78,8 +79,8 @@ more ports between a data plane and a container. Functionally, it matters for
 traffic differentiation between a pod control plane, and perhaps one or more
 data plane networks it is connected to. However, the goal of Nimbess is to 
 simplify networking, and one way to do that is to do real traffic
-differentiation within the data plane itself. Therefore with UNP, one can set
-policy which ensures that bandwidth is reserved for a containers control or
+differentiation within the data plane itself. As an example, with UNP one can
+set policy which ensures that bandwidth is reserved for a containers control or
 management plane, while also applying QoS for dataplane connectivity and
 slicing traffic correctly for multi-tenancy.
 
