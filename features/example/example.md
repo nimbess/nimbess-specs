@@ -21,6 +21,10 @@ List any concerns around performance increase/decrease with your change.
 ## User Impact
 List any concerns around user experience with your change.
 
+## External Impact
+List any expected impacts or changes that will be required to other projects
+outside of Nimbess with your change.
+
 ## Backwards Compatibility
 List any impact to backwards compatibility with your change.
 
