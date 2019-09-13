@@ -12,6 +12,7 @@ guides to get started with Nimbess. To get started, read these:
 * [Architecture](core/architecture.md)
 * [Functional Design](core/functional-spec.md)
 * [Developer Guide](core/developer.md)
+* [User Guide](core/user.md)
 
 ## Feature Specs
 All new features should include a Feature Spec that details the changes and
