@@ -63,6 +63,20 @@ it first in order to have the proper hugepage settings as referred to in
 kubectl apply -f https://raw.githubusercontent.com/nimbess/nimbess-agent/master/k8s/nimbess.yaml
 ```
 
+If everything deployed correctly your cluster should look something like this:
+```bash
+[root@trozet ~]# kubectl -n kube-system get pod
+NAME                                       READY   STATUS    RESTARTS   AGE
+etcd-trozet.localhost                      1/1     Running   0          136m
+kube-apiserver-trozet.localhost            1/1     Running   0          136m
+kube-controller-manager-trozet.localhost   1/1     Running   0          136m
+kube-proxy-87c4z                           1/1     Running   0          137m
+kube-scheduler-trozet.localhost            1/1     Running   0          136m
+nimbess-agent-7lj9v                        3/3     Running   0          76m
+nimbess-etcd                               1/1     Running   0          76m
+stargazer                                  1/1     Running   0          63m
+```
+
 ## Using Nimbess
 
 The following sections will go through some example usages of Nimbess. The
